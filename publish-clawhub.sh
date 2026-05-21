@@ -7,9 +7,9 @@ set -e
 SKILL_DIR="$(cd "$(dirname "$0")" && pwd)"
 SLUG="ielts-tuyaya-upload"
 NAME="IELTS Tuyaya Upload 雅思成绩一键上传"
-VERSION="1.3.0"
+VERSION="1.3.1"
 TAGS="latest"
-CHANGELOG="v1.3.0: 跟随 ielts-reading-review v5.4.0 升级——sync-review.sh 在 IELTS_USER_TOKEN 缺失时，自动调用 setup-client-mode.sh 走浏览器授权流（不再要求用户 F12 手动复制 token）。配合更新 SKILL.md 触发词与文档示例。\n\nv1.2.0: 双通道改造，sync-review.sh 自动检测 IELTS_USER_TOKEN，token 通道走 batchImport，匿名走 skill-review。"
+CHANGELOG="v1.3.1: 文档大改造，README/SKILL 全面阐释 v1.3.0 OAuth 风格浏览器授权流——新旧流程对比表 + 安全设计四大保障 + Q&A 答疑。同步推送 GitHub。\n\nv1.3.0: 跟随 ielts-reading-review v5.4.0 升级——sync-review.sh 在 IELTS_USER_TOKEN 缺失时，自动调用 setup-client-mode.sh 走浏览器授权流（不再要求用户 F12 手动复制 token）。"
 
 echo "📦 准备发布到 ClawHub..."
 echo "   Slug: $SLUG"
